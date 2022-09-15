@@ -1,0 +1,13 @@
+.main-wrapper{
+  display: flex;
+  justify-content: flex-start;
+}
+.main-wrapper > h2{
+  box-sizing: border-box;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+}
+.content-wrapper{
+  width: 80%;
+}

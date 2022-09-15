@@ -1,0 +1,40 @@
+.books-result-wrapper{
+  display: flex;
+  width: 100%;
+  height: max-content;
+  box-sizing: border-box;
+}
+
+.books-result-wrapper > .item{
+  box-sizing: content-box;
+  height: 110px;
+  padding: 20px;
+  display: flex;
+  width: 400px;
+  min-width: 400px;
+  max-width: 400px;
+  border: 1.2px solid black;
+  border-radius: 4px;
+  margin:4px;
+  overflow-x: auto;
+}
+.books-result-wrapper::-webkit-scrollbar{
+  display: none;
+}
+
+
+.item-contributor{
+  align-self: flex-end;
+}
+
+.loading-text{
+  width: 100%;
+  margin-left: 50%;
+}
+.img-section{
+  width: 100px;
+  height: 110px;
+}
+.user-section{
+  padding-left: 5px;
+}

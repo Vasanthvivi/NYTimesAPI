@@ -1,0 +1,65 @@
+
+<h1>ALL BOOKS LIST</h1>
+<div class="books-result-wrapper" *ngIf="books.length > 0">
+  <ng-container *ngFor="let book of books">
+    <div class="item">
+      <img class="img-section" [src]="book.image" style="height: 100px; width:100px;"/>
+      <div class="user-section">
+        <h5>{{book.title}}</h5>
+        <p>{{book.author}}</p>
+        <p>{{book.name}}</p>
+      </div>
+    </div>
+  </ng-container>
+</div>
+<div class="books-result-wrapper" *ngIf="books.length <= 0">
+  <h5 class="loading-text">LOADING...</h5>
+</div>
+
+
+<h1>BEST BOOKS LIST</h1>
+<div class="books-result-wrapper" *ngIf="booksList.length > 0">
+  <ng-container *ngFor="let book of booksList">
+    <div class="item">
+      <h2>{{book.list_name}}</h2>
+      <p class="item-contributor">{{book.published_date}}</p>
+    </div>
+  </ng-container>
+</div>
+
+<div class="books-result-wrapper" *ngIf="booksList.length <= 0">
+<h5 class="loading-text">LOADING...</h5>
+</div>
+
+
+<h1>FROM BEST SELLERS</h1>
+<div class="books-result-wrapper" *ngIf="bestSellersBooks.length > 0">
+  <ng-container *ngFor="let sellers of bestSellersBooks">
+    <div class="item">
+      {{sellers.title}}
+      <p class="item-contributor">{{sellers.contributor}}</p>
+    </div>
+  </ng-container>
+</div>
+<div class="books-result-wrapper" *ngIf="bestSellersBooks.length <= 0">
+  <h5 class="loading-text">LOADING...</h5>
+</div>
+
+
+<h1>BEST SELLERS</h1>
+<div class="books-result-wrapper" *ngIf="bestSellers.length > 0">
+  <ng-container *ngFor="let seller of bestSellers">
+    <div class="item">
+      <h3>{{seller.display_name}}</h3>
+      <p class="item-contributor">
+        <span>on&nbsp;</span>{{seller.newest_published_date}}
+      </p>
+    </div>
+  </ng-container>
+</div>
+<div class="books-result-wrapper" *ngIf="bestSellers.length <= 0">
+  <h5 class="loading-text">LOADING...</h5>
+</div>
+
+
+
